@@ -33,6 +33,7 @@
 	</head>
 	<body>
 		<nav class="main-nav">
+
 			<a href="<?php $this->options->siteUrl(); ?>">首页</a>
 			<?php $this->widget('Widget_Contents_Page_List')->parse('<a href="{permalink}">{title}</a>'); ?>
 

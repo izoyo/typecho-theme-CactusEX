@@ -381,6 +381,7 @@ Post List
 
 #post-list {
 	margin-bottom: 0;
+	clear: both;
 }
 
 #post-list li,#archive-list li {
@@ -898,9 +899,34 @@ p {
 
 .PerInfoForm {
   float: left;
-  margin: 9px;
+  margin: 5px 8px 8px 30px;
 }
 
 section {
   font-family:"Microsoft JhengHei", "Microsoft YaHei","微软雅黑","华文细黑","STHeiti","MingLiu";
+}
+
+
+.search-category{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.Category-Link{
+  margin: 8px;
+  display: inline-block;
+}
+
+#search-form{
+  display:inline-block;
+}
+#search-in{
+  margin-left:10%;
+  width:60%;
+  display:inline;
+}
+#search-sub{
+  padding:8px;
+  margin:0 5px;
+  float:inherit;
 }

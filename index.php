@@ -22,6 +22,22 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 					</header>
 				</section>
 			</div>
+
+
+
+<div class="search-category">
+<div>
+    <?php $this->widget('Widget_Metas_Category_List')
+               ->parse('<a class="Category-Link" href="{permalink}">{name}</a>'); ?>
+</div>
+<form id="search-form" method="post" action="">
+    <input type="text" id="search-in" class="text" name="s" /> <input type="submit" id="search-sub" class="submit" value="搜索" />
+</form>
+
+</div>
+
+
+
 			<ul id="post-list">
 <?php while($this->next()): ?>
 				<li>
