@@ -898,8 +898,13 @@ p {
 
 
 .PerInfoForm {
-  float: left;
-  margin: 5px 8px 8px 30px;
+    width:30%;
+}
+#info-form {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
 }
 
 section {

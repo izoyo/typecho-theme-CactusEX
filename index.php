@@ -2,10 +2,11 @@
 /**
  * 一个简约的Typecho响应式主题。
  *
- * @package Cactus
+ * @package CactusEX
  * @author Zohar
+ * @modify 悠扬
  * @version 1.0.0
- * @link https://www.iwch.me/
+ * @link https://izoyo.cn/
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;

@@ -19,11 +19,11 @@
 			<?php if($this->user->hasLogin()): ?>
 				<p>登录为 <a href="<?php $this->options->profileUrl(); ?>" target="_blank" data-no-instant><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" data-no-instant><?php _e('退出'); ?> &raquo;</a></p>
 					<?php else: ?>
-						<p>
+						<div id="info-form">
 						<input type="text" name="author" id="author" class="PerInfoForm text" placeholder="称呼" value="<?php $this->remember('author'); ?>" required />
 						<input type="email" name="mail" id="mail" class="PerInfoForm text" placeholder="Email" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
 						<input type="url" name="url" id="url" class="PerInfoForm text" placeholder="<?php _e('http://'); ?>" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />
-					</p>
+					</div>
 					<?php endif; ?>
 				<p><textarea rows="8" cols="50" name="text" id="textarea" class="textarea" placeholder="内容" required ><?php $this->remember('text'); ?></textarea></p>
 			<p><button type="submit" class="submit"><?php _e('提交评论 (Ctrl+Enter)'); ?></button></p>
